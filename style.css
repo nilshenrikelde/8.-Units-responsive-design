@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100svh;
+  font-size: 1rem;
+}
+
+div {
+  display: grid;
+  place-items: center;
+  border: solid 1px black;
+  min-height: 200px;
+  max-width: 20rem;
+  /* width: 20ch; */
+  /* ch = the width of the character 0 */
+  font-size: 25px;
+  padding: 1rem;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1em;
+}
+
+@media (min-width: 700px) {
+  div {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+  }
+}
